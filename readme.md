@@ -52,6 +52,7 @@ Libraries: nwidart/laravel-modules , yajra/laravel-datatables
 - create mysql database then create .inv file to set mysql data configuration
 - run command: "php artisan migrate:refresh --seed"
 - then open browser and go to task root "http://localhost/ZeemTask/public/", click login button on top-right:
+
 username: Admin
 password: Password 
 
