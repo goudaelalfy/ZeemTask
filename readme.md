@@ -54,6 +54,7 @@ Libraries: nwidart/laravel-modules , yajra/laravel-datatables
 - then open browser and go to task root "http://localhost/ZeemTask/public/", click login button on top-right:
 
 username: Admin
+
 password: Password 
 
 
