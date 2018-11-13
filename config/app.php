@@ -175,6 +175,9 @@ return [
 
         //By Gouda
         Yajra\DataTables\DataTablesServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
+        'Collective\Html\HtmlServiceProvider',
+
     ],
 
     /*
@@ -226,7 +229,9 @@ return [
         
         //By Gouda
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
+        
     ],
 
 ];

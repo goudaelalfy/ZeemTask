@@ -1,67 +1,59 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="http://zeem.sa/wp-content/themes/zeem/images/logo.png" width="100px"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## About Zeem Task
 
-## About Laravel
+Task to get Senior Laravel Developer vacancy in Zeem company.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Assignment Details:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Please use the following Users Stories as a reference and requirements of your work:
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+1- Users Story One:
 
-## Learning Laravel
+As an admin, I want to:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+Be able to login to my Administration Panel using the username "Admin" and password "Password".
+Be able to create an article with an Article Name and an Article body (Article Details), and save it to be added to my "Articles List" to be viewed by me and other authorized viewers. 
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Acceptance Criteria/Conditions and specifications:
+The article name and body will have to be entered before saving the article. 
+The article name and body should only be entered in alphabetic letters. 
+The article body should not exceed 1000 alphabetic letters.
+The article should be saved based on the current date and time. 
+The article should be added to "Articles List" and its name and date/time of submission should be shown and associated to it.
+Each article in "Articles List" should be accessible to be viewed with all its details (name, article body, and submission data/time)
+2- Users Story Two:
 
-## Laravel Sponsors
+As an admin, I want to:
+Add a new User Type/Role with the role name "Articles Viewer" with a permission to view the list of articles and article details only, and save it to the "Users Types List".
+Add a new User with a user name "User" and password "Pass", and choose the user to be an "Article Viewer", and save it to the "Users List".
+Acceptance Criteria/Conditions and specifications:
+The new User Type/Role "Articles Viewer" should be added to "Users Types List" .
+The new User with the "Articles Viewer" Type/Role should be added to "Users List" 
+The new User with the "Articles Viewer" Type/Role should be able to login to a User Control Panel to view the "Articles List" and choose to view an article with all its details (name, article body, and addition data/time).
+The new User with the "Articles Viewer" Type/Role should be logout and exit the User Control Panel.
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
+## Tools
 
-## Contributing
+Laravel v5.7, MySQL
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Theme: https://github.com/almasaeed2010/AdminLTE/releases/tag/v2.4.5
 
-## Security Vulnerabilities
+Libraries: nwidart/laravel-modules , yajra/laravel-datatables
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## How to try?
+
+- git clone the repository
+- composer install
+- create mysql database then update .inv file to set mysql data
+- php artisan migrate:refresh --seed
+- then open browser and go to task root "http://localhost/ZeemTask/public/", click login button:
+username: Admin
+password: Password 
+
+
 
 ## License
 
