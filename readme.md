@@ -1,4 +1,4 @@
-<p align="center"><img src="http://zeem.sa/wp-content/themes/zeem/images/logo.png" width="100px"></p>
+<p align="center"><img src="http://zeem.sa/wp-content/themes/zeem/images/logo.png" width="150px"></p>
 
 ## About Zeem Task
 
@@ -22,6 +22,8 @@ The article body should not exceed 1000 alphabetic letters.
 The article should be saved based on the current date and time. 
 The article should be added to "Articles List" and its name and date/time of submission should be shown and associated to it.
 Each article in "Articles List" should be accessible to be viewed with all its details (name, article body, and submission data/time)
+
+
 2- Users Story Two:
 
 As an admin, I want to:
@@ -45,11 +47,11 @@ Libraries: nwidart/laravel-modules , yajra/laravel-datatables
 
 ## How to try?
 
-- git clone the repository
-- composer install
-- create mysql database then update .inv file to set mysql data
-- php artisan migrate:refresh --seed
-- then open browser and go to task root "http://localhost/ZeemTask/public/", click login button:
+- git clone the repository: "git clone https://github.com/goudaelalfy/ZeemTask.git"
+- cd to your repository directory then run: "composer install"
+- create mysql database then create .inv file to set mysql data configuration
+- run command: "php artisan migrate:refresh --seed"
+- then open browser and go to task root "http://localhost/ZeemTask/public/", click login button on top-right:
 username: Admin
 password: Password 
 
